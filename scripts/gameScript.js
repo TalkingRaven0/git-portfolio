@@ -87,8 +87,8 @@ function character (width, height, sprite, x, y){
         }
     }
     this.moveCommand = function(positionX,positionY){
-        this.point.x = positionX;
-        this.point.y = positionY;
+        this.point.x = positionX - (this.width/2);
+        this.point.y = positionY - (this.height/2);
         this.point.moving = true;
     }
 }
