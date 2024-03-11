@@ -24,17 +24,23 @@ function spriteSheet(sprite, width, height, context,imgW,imgH){
     this.height = height;
     this.img = new Image();
     this.img.src = sprite;
-    this.frames = [];
+    this.frames = [[]];
+
+    var index = 0;
     for(y=0;y<imgH;y+=height){
         for(x=0;x<imgW;x+=width){
-            this.frames.push({x:x,y:y});
+            this.frames[index].push({x:x,y:y});
         }
+        index += 1;
     }
-    this.getFrameLength = function (){
-        return this.frames.length;
+
+    console.log(this.frames);
+
+    this.getFrameLengthOfIndex = function (i){
+        return this.frames[i].length;
     }
-    this.drawSprite = function (frameNumber,x,y,width,height){
-        this.context.drawImage(this.img,this.frames[frameNumber].x,this.frames[frameNumber].y,this.width,this.height,x,y,width,height);
+    this.drawSprite = function (frameNumber,animIndex,x,y,width,height){
+        this.context.drawImage(this.img,this.frames[animIndex][frameNumber].x,this.frames[animIndex][frameNumber].y,this.width,this.height,x,y,width,height);
     }
 }
 
@@ -73,7 +79,7 @@ function character (width, height, x, y, sprite,imgW,imgH, spriteWidth, spriteHe
 
         this.transform.update();
 
-        this.sprite.drawSprite(0,this.transform.x,this.transform.y,this.transform.width,this.transform.height)
+        this.sprite.drawSprite(0,0,this.transform.x,this.transform.y,this.transform.width,this.transform.height)
 
         if (!this.point.moving){
             this.transform.stop();
@@ -134,6 +140,7 @@ function staticObject(width, height, text, x, y) {
     }
   }
 
+  // Static Animated Object that only has 1 animation index (one row of spritesheet animation)
   function animatedObject(width, height, x, y, sprite,imgW,imgH, spriteWidth, spriteHeight,area,frameInterval){
     // Extended functions
     this.transform = new transform(width, height, x, y);
@@ -144,10 +151,10 @@ function staticObject(width, height, text, x, y) {
         // Do this every 10 frames
         if (area.frameNo % frameInterval == 0){
             this.animFrame += 1;
-            if (this.animFrame > this.sprite.getFrameLength()-1){
+            if (this.animFrame > this.sprite.getFrameLengthOfIndex(0)-1){
                 this.animFrame = 0;
             }
         }
-        this.sprite.drawSprite(this.animFrame,this.transform.x,this.transform.y,this.transform.width,this.transform.height)
+        this.sprite.drawSprite(this.animFrame,0,this.transform.x,this.transform.y,this.transform.width,this.transform.height)
     }
   }
