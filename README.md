@@ -19,5 +19,7 @@
 <br/><br/>
 
 # Downloaded Resources
+##### Disclaimer: I do not own nor claim ownership of assets listed here. These are all open source art made by different people.
 #### Note: Downloaded Resources are separated by folder based on source. If it isn't in a folder, it was either easily downloadable from multiple sources or made by myself
 - [Animated Animals from OpenGameArt.Org](https://opengameart.org/content/animated-wild-animals)
+- [Lots of free 2d tiles and sprites by Hyptosis | OpenGameArt.org](https://opengameart.org/content/lots-of-free-2d-tiles-and-sprites-by-hyptosis)
