@@ -49,7 +49,7 @@ function startGame() {
     } */
 
     // Define all game objects
-    myBackground = new background(409,403,"resources/bananacat.png",myGameArea);
+    myBackground = new background(1500,800,"resources/backgroundFiles/myBackground.png",myGameArea);
     myBackground.initialize();
     theThing = new character(50, 50, (window.innerWidth/2)-25, (window.innerHeight/2)-25, "resources/bananacat.png",409,403,409,403,myGameArea);
     introBox = new staticObject(100,50,"About Me",(window.innerWidth/2)-50, (window.innerHeight/2)-300,myGameArea);
