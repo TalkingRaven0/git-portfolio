@@ -1,35 +1,19 @@
-# Simple workflow for deploying static content to GitHub Pages
-name: Deploy Next.js content to Pages
+# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: GitHub Pages deploy
 
 on:
-  # Runs on pushes targeting the default branch
   push:
-    branches: ["main"]
-
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
-
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
+    branches: [main]
 
 jobs:
   build:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v2.3.1
-
       - name: Use Node.js 18.x
         uses: actions/setup-node@v1
         with:
@@ -39,16 +23,11 @@ jobs:
         run: npm ci
 
       - name: Build my App
-        run: npm run build && touch ./out/.nojekyll
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: '.'
+        run: npm run build && npm run export && touch ./out/.nojekyll
 
       - name: Deploy 🚀
-        id: deployment
-        uses: actions/deploy-pages@v4
+        uses: JamesIves/github-pages-deploy-action@v4.4.1
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: public # The branch the action should deploy to.
+          FOLDER: out # The folder the action should deploy.
