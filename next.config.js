@@ -8,7 +8,7 @@ var nextConfig = {
 
 if (env == "production"){
     nextConfig['basePath'] = "/git-portfolio";
-    nextConfig['assetPrefix'] = "/git-portfolio/"
+    nextConfig['assetPrefix'] = "/git-portfolio/";
 }
   
   module.exports = nextConfig;
