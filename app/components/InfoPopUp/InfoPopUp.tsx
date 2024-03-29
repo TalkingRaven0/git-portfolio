@@ -84,7 +84,7 @@ const InfoPopUp = (props:any) => {
                             <h1 className=' text-xl'> Technical Skills </h1>
                             <div className = 'overflow-auto max-h-[90%]'>
                                 {techSkillText.map((skill) => (
-                                    <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded m-1' key={skill.skillName} onClick={()=>skillButtonHandler(skill.skillName,skill.description)} >{skill.skillName}</button>
+                                    <button className=' bg-neutral-500 hover:bg-neutral-700 text-white font-bold py-2 px-4 rounded m-1' key={skill.skillName} onClick={()=>skillButtonHandler(skill.skillName,skill.description)} >{skill.skillName}</button>
                                 ))}
                             </div>
                         </div>
