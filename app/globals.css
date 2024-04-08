@@ -46,3 +46,17 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #555; 
 }
+
+.opacity-gradient {
+  -webkit-mask-image: linear-gradient(to right,rgba(0,0,0,0) 5%,rgba(0,0,0,1)10%, rgba(0,0,0,1)90%, rgba(0,0,0,0) 95%);
+  }
+
+
+.hide-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scroll {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
