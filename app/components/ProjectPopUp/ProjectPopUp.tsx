@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import ProjectCard from './ProjectCard/ProjectCard'
 import ProjectCarousel from './ProjectCarousel/ProjectCarousel'
 import projects from './projects.json'
+import MrDash from './ProjectCard/MrDash/MrDash'
 
 const ProjectPopUp = (props:any) => {
     const [carouselIndex,carouselIndexSet] = useState(0);
@@ -20,9 +21,9 @@ const ProjectPopUp = (props:any) => {
                     <div className='flex-auto m-10 mt-5 mx-10 overflow-clip opacity-gradient'>
                         <div className='w-fit h-full relative center left-1/2 -translate-x-1/2'>
                             <ProjectCarousel carouselIndexMove={carouselIndex} callback={carouselIndexSet}>
-                                {projects.map((project) => (
-                                    <ProjectCard key={project.projectTitle} description={project.description} src={project.image} projectTitle={project.projectTitle}/>
-                                ))}
+                                <MrDash />
+                                <MrDash />
+                                <MrDash />
                             </ ProjectCarousel>
                         </div>
                     </div>

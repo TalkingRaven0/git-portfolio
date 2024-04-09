@@ -1,15 +1,15 @@
 [
     {
         "projectTitle": "Mr. Dash",
-        "image" : "/resources/mDash.png",
-        "description" : "Made with Unity"
+        "image" : "/projectPictures/mDash.png",
+        "description" : "2D Sidescrolling Platformer Made in Unity.\nThis project was my third attempt at making a game in Unity but the first projects got stuck in prototyping as their scopes was unrealistic for the development time that I gave myself.\nUtilized C# primarily for coding in functionalities and used a module-based philosophy when making the game objects, particularly the traps.\nIt was primarily made with scalability in mind and make it easier for myself to create new game objects if I ever decide to expand the project.\nAs it currently stands, it has 5 levels, and it is currently playable in itch.io."
     },{
-        "projectTitle": "Other Project",
-        "image" : "/resources/mDash.png",
-        "description" : "Made with Unity"
+        "projectTitle": "Project Mars",
+        "image" : "/projectPictures/sbxLogo.png",
+        "description" : "Internal Company Project."
     },{
         "projectTitle": "Other Other Project",
-        "image" : "/resources/mDash.png",
+        "image" : "/projectPictures/mDash.png",
         "description" : "Made with Unity"
     }
 ]

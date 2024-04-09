@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 
-const ProjectCard = ({description,src,projectTitle}:{description:string,src:string,projectTitle:string}) => {
+const ProjectCard = ({description,src,projectTitle}:{description:React.JSX.Element,src:string,projectTitle:string}) => {
   return (
     <div className="w-[50vw] h-auto m-1 bg-neutral-800 flex flex-col rounded-3xl border-2 border-neutral-400">
       {/* Header */}
@@ -16,13 +16,13 @@ const ProjectCard = ({description,src,projectTitle}:{description:string,src:stri
               <Image 
                 src={src}
                 fill={true}
-                alt="Mr. Dash Thumbnail"
+                alt={projectTitle + " Thumbnail"}
                 className=' object-scale-down'
                 sizes='40vw'
               />
           </div>
         </div>
-        <div>
+        <div className=' h-fit'>
           {description}
         </div>
       </div>
