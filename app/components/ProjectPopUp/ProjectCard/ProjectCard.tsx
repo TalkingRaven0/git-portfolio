@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const ProjectCard = ({description,src,projectTitle}:{description:React.JSX.Element,src:string,projectTitle:string}) => {
   return (
-    <div className="w-[50vw] h-auto m-1 bg-neutral-800 flex flex-col rounded-3xl border-2 border-neutral-400">
+    <div className="w-[50vw] h-auto bg-neutral-800 flex flex-col rounded-3xl border-2 border-neutral-400">
       {/* Header */}
       <div className=' flex-none'>
         <h1 className=' text-center text-2xl font-mono m-0 mt-3 p-0'>{projectTitle}</h1>
