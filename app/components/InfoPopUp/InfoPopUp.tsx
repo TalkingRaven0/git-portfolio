@@ -20,8 +20,8 @@ const InfoPopUp = (props:any) => {
             {props.isShown && (
                 <div className='w-[90vw] h-[80vh] rounded-xl bg-neutral-900 border flex flex-row'>
                     <div className = 'flex-auto m-2 flex flex-col'>
-                        <div className = 'flex-auto m-2 justify-normal text-center max-h-[50%]'>
-                            <h1 className=' text-xl'> Technical Skills </h1>
+                        <div className = 'flex-auto m-2 justify-normal text-center max-h-[40%]'>
+                            <h1 className=' text-xl font-mono font-bold m-3 mt-0'> Technical Skills </h1>
                             <div className = 'overflow-auto max-h-[90%]'>
                                 {techSkillText.map((skill) => (
                                     <button className=' bg-neutral-500 hover:bg-neutral-700 text-white font-bold py-2 px-4 rounded m-1' key={skill.skillName} onClick={()=>skillButtonHandler(skill.skillName,skill.description)} >{skill.skillName}</button>
@@ -30,7 +30,7 @@ const InfoPopUp = (props:any) => {
                         </div>
                         <hr className=' m-3'></hr>
                         <div className = 'flex-auto m-2 justify-normal text-center overflow-auto'>
-                            <h1 className=' text-xl'> Soft Skills </h1>
+                            <h1 className=' text-xl font-mono font-bold m-3 mt-0'> Soft Skills </h1>
                             <div className=' overflow-auto'>
                                 {softSkillText.map((skill) => (
                                     <div className=' inline-block bg-neutral-500 text-white font-bold py-2 px-4 rounded m-1' key={skill} >{skill}</div>
