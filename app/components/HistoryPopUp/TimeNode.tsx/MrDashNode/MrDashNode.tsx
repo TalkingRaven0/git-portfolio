@@ -11,7 +11,7 @@ const MrDashNode = () => {
     );
     
     return (
-        <TimeNode nodeLabel='Mr. Dash' nodePopUp={nodePopUp} labelIsUp={false} />
+        <TimeNode nodeLabel='Mr. Dash Project' nodePopUp={nodePopUp} labelIsUp={false} />
     )
 }
 

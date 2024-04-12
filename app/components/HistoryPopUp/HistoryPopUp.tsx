@@ -21,7 +21,7 @@ const HistoryPopUp = (props:any) => {
                         <div className=' flex-auto' />
                         <TimeNode nodeLabel='Graduation' nodePopUp={<></>} labelIsUp={false} />
                         <div className=' flex-auto' />
-                        <TimeNode nodeLabel='Current Employment' nodePopUp={<></>} labelIsUp={true} />
+                        <TimeNode nodeLabel='Seedbox Technologies Inc.' nodePopUp={<></>} labelIsUp={true} />
                     </div>
                 </div>
             </div>
