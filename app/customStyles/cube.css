@@ -1,0 +1,56 @@
+@keyframes turn {
+  from { transform: rotate3d(0, 0, 0, 0); }
+  to { transform: rotate3d(1, 1, 0, 360deg); }
+}
+
+.container {
+  perspective: 100dvh;
+}
+
+.cubeMain{
+  width:80dvh;
+  height:80dvh
+}
+
+.cube {
+  transform-style: preserve-3d;
+  animation: turn 5s linear infinite;
+}
+
+.face {
+  background: #082f493b;
+  border: 2px solid rgb(0, 213, 255);
+  position: absolute;
+  transition: transform 500ms;
+}
+
+.front {
+  transform: translateZ(10dvh);
+}
+
+.back {
+  transform: translateZ(-10dvh) rotateY(180deg);
+}
+
+.left {
+  transform: translateX(-10dvh) rotateY(-90deg);
+}
+
+.right {
+  transform: translateX(10dvh) rotateY(90deg);
+}
+
+.top {
+  transform: translateY(-10dvh) rotateX(90deg);
+}
+
+.bottom {
+  transform: translateY(10dvh) rotateX(-90deg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cube {
+    animation: none;
+    transform: rotate3d(1, 1, 0, 45deg);
+  }
+}
