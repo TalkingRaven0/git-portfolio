@@ -39,7 +39,7 @@ export default function Home() {
 
   return (
     <main className="  overflow-y-scroll hide-scroll h-screen w-screen snap-y snap-mandatory m-0" >
-      <div className='h-dvh snap-center bg-gradient-to-br from-slate-800 via-sky-900 to-slate-800'>
+      <div className='h-dvh snap-center bg-gradient-to-br from-slate-800 via-sky-900 to-slate-800 relative overflow-clip'>
         <div className=" absolute-centered ">
           <div className="cube cubeMain">
             <div className="face top cubeMain"></div>
