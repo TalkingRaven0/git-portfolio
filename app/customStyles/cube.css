@@ -3,8 +3,8 @@
   to { transform: rotate3d(1, 1, 0, 360deg); }
 }
 
-.container {
-  perspective: 100dvh;
+.cubeDiv {
+  perspective: 20dvh;
 }
 
 .cubeMain{
@@ -18,8 +18,8 @@
 }
 
 .face {
-  background: #082f493b;
-  border: 2px solid rgb(0, 213, 255);
+  background:none;
+  border: 1px solid rgb(0, 213, 255);
   position: absolute;
   transition: transform 500ms;
 }
