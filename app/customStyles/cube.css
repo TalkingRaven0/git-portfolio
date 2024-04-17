@@ -13,8 +13,8 @@
 }
 
 .cube {
-  transform-style: preserve-3d;
-  animation: turn 5s linear infinite;
+  transform-style: preserve-3d !important;
+  animation: turn 5s linear infinite !important;
 }
 
 .face {
