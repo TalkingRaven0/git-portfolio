@@ -66,7 +66,7 @@ export default function Home() {
         </div>
 
         <div className={buttonShow}>
-          <button className="absolute-centered p-10 bg-blue-950 border-2 border-sky-400 hover:bg-blue-900 rounded-lg text-5xl font-mono font-bold" onClick={()=>setShowContent(true)}>S T A R T</button>
+          <button className="absolute-centered p-10 bg-blue-950 border-2 border-sky-400 hover:bg-blue-900 rounded-lg text-5xl font-mono font-bold" onClick={()=>{setShowContent(true)}}>S T A R T</button>
         </div>
         <div className={contentShow + " flex flex-col h-full text-cyan-300 relative"}>
           <div className=" flex flex-col flex-auto p-5 font-mono z-10 m-10" >
