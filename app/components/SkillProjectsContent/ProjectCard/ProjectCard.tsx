@@ -7,7 +7,7 @@ const ProjectCard = ({description,src,projectTitle}:{description:React.JSX.Eleme
       {/* Header */}
       <div className=' flex-none'>
         <h1 className=' text-center text-2xl font-mono m-0 mt-3 p-0'>{projectTitle}</h1>
-        <hr className=' m-2 mt-0' />
+        <hr className=' m-2 mt-0 border-sky-400' />
       </div>
       {/* Content */}
       <div className=' overflow-auto flex flex-col flex-1 hide-scroll'>

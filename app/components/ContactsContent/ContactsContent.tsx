@@ -12,7 +12,7 @@ const ContactsContent = () => {
   }
 
   return (
-    <div className=' flex-none flex h-fit bg-sky-950 border-t-2 border-cyan-400 px-10 py-3 font-mono text-sky-200'>
+    <div className='center-shadow flex-none flex h-fit bg-sky-950 border-t-2 border-cyan-400 px-10 py-3 font-mono text-sky-200'>
       <div className='flex-[1] font-mono text-3xl text-center content-center drop-shadow-glow text-sky-300'>CONTACT ME:</div>
       <div className='flex-[2] h-fit grid grid-cols-3 gap-1 '>
         <div className='text-blue-300'>Full Name:         </div> <div className=' col-span-2'>Den Arwin G. Salazar</div>

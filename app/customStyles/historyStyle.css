@@ -9,8 +9,10 @@
 
 #object {
     transform-style: preserve-3d;
-    --full-rotate: 0,1,0,-60deg;
-    /* animation: test 10s linear infinite */
+    transition:all;
+    transition-duration: 150ms;
+    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+    --full-rotate: 0,1,-0.2,-70deg;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) translateZ(var(--tw-translate-z)) rotate3d(var(--full-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -19,19 +21,15 @@
 }
 
 .fold {
+    display: flex;
+    flex-direction: column;
+
     --boxWidth: 50dvw;
     width: var(--boxWidth);
-    height: 90%;
+    height: fit-content;
 
-    --tw-bg-opacity: 0.8;
-    background-color: rgb(30 41 59 / var(--tw-bg-opacity));
-
-    border-width: 2px;
-    --tw-border-opacity: 1;
-    border-color: rgb(34 211 238 / var(--tw-border-opacity));
-
-    --full-rotate: 0,1,0,80deg;
-    --tw-translate-z: calc(var(--boxWidth)*0.56);
+    --full-rotate: 0,1,-0.1,95deg;
+    --tw-translate-z: calc(var(--boxWidth)*0.51);
 
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) translateZ(var(--tw-translate-z)) rotate3d(var(--full-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
