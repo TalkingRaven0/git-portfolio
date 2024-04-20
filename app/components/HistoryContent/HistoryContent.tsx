@@ -1,6 +1,10 @@
 import React, { useEffect, useRef, useState } from 'react'
 import '@/app/customStyles/historyStyle.css'
 import HistoryNode from './HistoryNode/HistoryNode';
+import Present from './HistoryNode/Present/Present';
+import CollegeBegin from './HistoryNode/CollegeBegin/CollegeBegin';
+import MrDashTime from './HistoryNode/MrDashTime/MrDashTime';
+import CollegeEnd from './HistoryNode/CollegeEnd/CollegeEnd';
 
 const HistoryContent = () => {
   const [zTranslate,setZtranslate] = useState(0);
@@ -27,10 +31,10 @@ const HistoryContent = () => {
             <div className='absolute-centered anchor h-full w-fit'>
               <div id='line'  ref={objectRef}  className="h-3 w-full bg-sky-400 absolute-centered" />
               <div  className=' anchor flex min-w-full w-fit h-full'>
-                <HistoryNode />
-                <HistoryNode />
-                <HistoryNode />
-                <HistoryNode noSpacer />
+                <CollegeBegin />
+                <MrDashTime />
+                <CollegeEnd />
+                <Present nospacer />
               </div>
             </div>
           </div>
