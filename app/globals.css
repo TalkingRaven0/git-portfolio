@@ -67,10 +67,6 @@ p {
   background: #555; 
 }
 
-.opacity-gradient {
-  mask-image: linear-gradient(to right,rgba(0,0,0,0) 5%,rgba(0,0,0,1)10%, rgba(0,0,0,1)90%, rgba(0,0,0,0) 95%);
-  }
-
 
 .hide-scroll::-webkit-scrollbar {
   display: none;

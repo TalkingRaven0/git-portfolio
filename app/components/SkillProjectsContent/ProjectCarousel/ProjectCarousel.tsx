@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import React, { useState } from 'react'
 import CarouselCard from './CarouselCard/CarouselCard';
+import '@/app/customStyles/projectStyle.css'
 
 const ProjectCarousel = ({children}: {children:Array<React.JSX.Element>}) => {
     const [currentIndex,currentIndexSet] = useState(0);
@@ -34,7 +35,7 @@ const ProjectCarousel = ({children}: {children:Array<React.JSX.Element>}) => {
                 <Image className=' -scale-x-100 drop-shadow-glow' src="/resources/arrow.svg" width={100} height={100} alt="Picture of the author" />    
             </button>
 
-            <div className='overflow-clip opacity-gradient h-full'>
+            <div className='overflow-clip opacity-gradient-tr h-full'>
                 <div className=' flex flex-row w-fit h-full py-3 relative center left-1/2 -translate-x-1/2'>
                     <CarouselCard extraClasses=' scale-75 -mr-52 -z-10' child={leftDisplay} />
                     <CarouselCard extraClasses=' center-shadow z-10' child={centerDisplay} />
