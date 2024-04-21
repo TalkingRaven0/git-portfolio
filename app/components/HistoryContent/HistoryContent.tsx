@@ -29,9 +29,11 @@ const HistoryContent = () => {
     const height = containerRef.current.clientHeight;
     const width = containerRef.current.clientWidth;
     containerRef.current.onmousemove=(event)=>{
-      setZtranslate(lineLength*(event.clientY/(height+(lineLength*0.3))));
-      setYtranslate(-1*((lineLength*0.4)-((lineLength*0.6)/height)*event.clientY));
-      setXtranslate(-1*((lineLength*1)-((lineLength*1.2)/(width))*event.clientX));
+      const xRatio = event.clientX/width;
+      const yRatio = event.clientY/height;
+      setZtranslate(minMaxRatio(-lineLength*2,lineLength*2.5,yRatio));
+      setYtranslate(minMaxRatio(-lineLength*0.4,lineLength*0.4,yRatio));
+      setXtranslate(minMaxRatio(-lineLength*1,lineLength*0.5,xRatio));
     }
   }
   
@@ -42,6 +44,10 @@ const HistoryContent = () => {
 
   };
   
+
+  function minMaxRatio(min:number,max:number,ratio:number){
+    return(min*(1-ratio)+max*ratio);
+  }
 
   return (
     <div ref={containerRef} className=' flex-auto  bg-slate-900 bg-gradient-radial from-slate-900 via-blue-950 to-slate-900 relative overflow-clip'>
