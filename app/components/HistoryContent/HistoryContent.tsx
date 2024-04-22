@@ -33,7 +33,7 @@ const HistoryContent = () => {
       const yRatio = event.clientY/height;
       setZtranslate(minMaxRatio(-lineLength*2,lineLength*2.5,yRatio));
       setYtranslate(minMaxRatio(-lineLength*0.4,lineLength*0.4,yRatio));
-      setXtranslate(minMaxRatio(-lineLength*1,lineLength*0.5,xRatio));
+      setXtranslate(minMaxRatio(-lineLength*1.5,lineLength*0.5,xRatio));
     }
   }
   
