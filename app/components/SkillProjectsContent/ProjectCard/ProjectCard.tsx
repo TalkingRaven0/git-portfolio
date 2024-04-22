@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 
-const ProjectCard = ({description,src,projectTitle,imgHeight="40%"}:{description:React.JSX.Element,src:string,projectTitle:string,imgHeight?:string}) => {
+const ProjectCard = ({description,src,projectTitle, heightClass="h-[40%]"}:{description:React.JSX.Element,src:string,projectTitle:string,heightClass?:string}) => {
   return (
     <div className=" flex flex-col h-full">
       {/* Header */}
@@ -11,7 +11,7 @@ const ProjectCard = ({description,src,projectTitle,imgHeight="40%"}:{description
       </div>
       {/* Content */}
       <div className=' overflow-auto flex flex-col flex-1 hide-scroll'>
-        <div className={' flex-none h-[40%] h-['+ imgHeight +']'}>
+        <div className={' flex-none '+ heightClass}>
           <div className='h-[100%] relative '>
               <Image 
                 src={src}
