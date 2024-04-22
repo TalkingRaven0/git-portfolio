@@ -29,6 +29,9 @@
     "skillName": "CSS",
     "description": "This was always used in any web development project I tackle, even this website that is primarily styled using Tailwind still uses native CSS for some niche and specific styling."
 },{
+    "skillName": "AJAX",
+    "description": ""
+},{
     "skillName": "Unity Game Engine",
     "description": "Used this game engine to create many game prototypes of game mechanics that I think would be interesting, however almost all has never seen the light of day since after producing said prototypes I tend to abandon the project in favor of a new idea. Except one project that I was able to put out a sort of Beta which is Mr. Dash, more details on that project can be found within the projects area of this website."
 },{

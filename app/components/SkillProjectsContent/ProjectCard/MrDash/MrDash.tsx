@@ -4,7 +4,7 @@ import ProjectCard from '../ProjectCard'
 const MrDash = () => {
     const description = (
         <div className='m-4 h-fit'>
-            <h1 className=' text-lg text-center'>2D Sidescrolling Platformer Made in Unity.</h1>
+            <h1 className=' text-lg text-center mb-2'>2D Sidescrolling Platformer Made in Unity.</h1>
             <h1>Technologies and Skills Used:</h1>
             <ul className=' list-disc ml-10'>
                 <li>Unity Game Engine</li>
@@ -12,7 +12,7 @@ const MrDash = () => {
                 <li>Game Development</li>
             </ul>
             <br />
-            <h1 className=" text-lg font-semibold">Storytime:</h1>
+            <h1 className=" text-lg font-semibold">Project Details:</h1>
             <p>
                 This project was my third attempt at making a game in Unity but the first projects got stuck in prototyping as their scopes was unrealistic for the development time that I gave myself.
             </p><br /><p>

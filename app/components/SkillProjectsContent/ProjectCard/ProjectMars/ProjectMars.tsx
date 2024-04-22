@@ -4,7 +4,7 @@ import ProjectCard from '../ProjectCard'
 const ProjectMars = () => {
     const description = (
         <div className='m-4 h-fit'>
-            <h1 className=' text-lg text-center'>Simple Static Website for Internal Use</h1>
+            <h1 className=' text-lg text-center mb-2'>Simple Static Website for Internal Use</h1>
             <h1>Technologies and Skills Used:</h1>
             <ul className=' list-disc columns-2 ml-10'>
                 <li>JavaScript</li>
@@ -15,7 +15,7 @@ const ProjectMars = () => {
                 <li>Tailwind CSS</li>
             </ul>
             <br />
-            <h1 className=" text-lg font-semibold">Storytime:</h1>
+            <h1 className=" text-lg font-semibold">Project Details:</h1>
             <p>
                 {"This project uses fetch for various GET APIs already developed in the company, while another team member developed a PUT API specifically for this project for storing the data from the web application."}
             </p><br/><p>
