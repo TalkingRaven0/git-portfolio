@@ -11,7 +11,7 @@ const ProjectCard = ({description,src,projectTitle,imgHeight="40%"}:{description
       </div>
       {/* Content */}
       <div className=' overflow-auto flex flex-col flex-1 hide-scroll'>
-        <div className={' flex-none h-['+ imgHeight +']'}>
+        <div className={' flex-none h-[40%] h-['+ imgHeight +']'}>
           <div className='h-[100%] relative '>
               <Image 
                 src={src}

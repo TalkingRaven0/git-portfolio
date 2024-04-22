@@ -1,7 +1,6 @@
-import React, { forwardRef, useState } from 'react'
+import React, { forwardRef } from 'react'
 import ProjectCarousel from './ProjectCarousel/ProjectCarousel';
 import MrDash from './ProjectCard/MrDash/MrDash';
-import ProjectCard from './ProjectCard/ProjectCard';
 
 import techSkillText from './techSkills.json';
 import softSkillText from './softSkills.json';
