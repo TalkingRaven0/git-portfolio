@@ -30,7 +30,7 @@ const Wards = () => {
     )
 
     return (
-        <ProjectCard description={description} src="/projectPictures/Wards.png" projectTitle="Wards" imgHeight='60%'/>
+        <ProjectCard description={description} src="/projectPictures/wards.png" projectTitle="Wards" imgHeight='60%'/>
     )
 }
 
