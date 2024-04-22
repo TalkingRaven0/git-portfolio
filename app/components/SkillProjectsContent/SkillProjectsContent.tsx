@@ -5,6 +5,7 @@ import ProjectCard from './ProjectCard/ProjectCard';
 
 import techSkillText from './techSkills.json';
 import softSkillText from './softSkills.json';
+import ProjectMars from './ProjectCard/ProjectMars/ProjectMars';
 
 
 const SkillProjectsContent = forwardRef(function SkillProjectsContent(props, ref:any) {
@@ -19,7 +20,7 @@ const SkillProjectsContent = forwardRef(function SkillProjectsContent(props, ref
       <div className=' h-20 flex-auto p-10'>
         <ProjectCarousel>
             <MrDash />
-            <ProjectCard description={<div>PlaceHolder1</div>} src="/projectPictures/placeholder.png" projectTitle="Place Holder 1st"/>
+            <ProjectMars />
             <ProjectCard description={<div>PlaceHolder2</div>} src="/projectPictures/placeholder.png" projectTitle="Place Holder 2nd"/>
         </ ProjectCarousel>
       </div>
