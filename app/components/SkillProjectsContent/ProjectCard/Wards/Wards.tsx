@@ -4,7 +4,7 @@ import ProjectCard from '../ProjectCard'
 const Wards = () => {
     const description = (
         <div className='m-4 h-fit'>
-            <h1 className=' text-lg text-center mb-2'>Website for Displaying Hospitals and their capacities.</h1>
+            <h1 className=' text-lg text-center mb-2'>Website for Displaying Hospitals and their capacities</h1>
             <h1>Technologies and Skills Used:</h1>
             <ul className=' list-disc columns-2 ml-10'>
                 <li>JavaScript</li>

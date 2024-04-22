@@ -4,7 +4,7 @@ import ProjectCard from '../ProjectCard'
 const MrDash = () => {
     const description = (
         <div className='m-4 h-fit'>
-            <h1 className=' text-lg text-center mb-2'>2D Sidescrolling Platformer Made in Unity.</h1>
+            <h1 className=' text-lg text-center mb-2'>2D Sidescrolling Platformer Made in Unity</h1>
             <h1>Technologies and Skills Used:</h1>
             <ul className=' list-disc ml-10'>
                 <li>Unity Game Engine</li>

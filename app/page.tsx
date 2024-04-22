@@ -70,7 +70,7 @@ export default function Home() {
         </div>
         <div className={contentShow + " flex flex-col h-full text-cyan-300 relative"}>
           <div className=" flex flex-col flex-auto p-5 font-mono z-10 m-10" >
-            <div className="text-2xl flex-auto m-2 mb-6">Hello, you can call me <span className="text-5xl m-2 font-bold drop-shadow-glow">Den</span></div>
+            <div className="text-2xl flex-auto m-2 mb-6">Hello, you can call me <span className="text-5xl font-bold drop-shadow-glow">Den</span></div>
             <div className=" flex-none w-full text-center">
               <div className="text-5xl">{"< P R O G R A M M E R  /  C O D E R >"}</div>
               <div className="text-2xl w-fit m-auto text-blue-200">Software Engineer</div>

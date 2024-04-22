@@ -1,15 +1,6 @@
 import React, { useRef } from 'react'
 
 const ContactsContent = () => {
-  
-  const emailRef = useRef<null | HTMLAnchorElement>(null);
-  const phoneRef = useRef<null | HTMLAnchorElement>(null);
-
-  function copyToClipboard(reference:any) {
-
-    navigator.clipboard.writeText(reference.current.innerHTML);
-    alert("copied to clipboard")
-  }
 
   return (
     <div className='center-shadow flex-none flex h-fit bg-sky-950 border-t-2 border-cyan-400 px-5 py-5 font-mono text-sky-200'>
@@ -31,8 +22,8 @@ const ContactsContent = () => {
           <div className='text-blue-300'>Mobile Number:</div>
         </div>
         <div className='flex-auto relative h-full ml-3'>
-          <div className='mb-3'><a ref={emailRef} target="_blank" href='mailto:densalazar1022@gmail.com' onClick={()=>copyToClipboard(emailRef)}>densalazar1022@gmail.com</a></div>
-          <div className='m-auto'><a ref={phoneRef} href='#' onClick={()=>copyToClipboard(phoneRef)}> +63 935 722 1558 </a></div>
+          <div className='mb-3 underline'><a target="_blank" href='https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=densalazar1022@gmail.com'>{"densalazar1022@gmail.com"}</a></div>
+          <div className='m-auto'>{"+63 935 722 1558"}</div>
         </div>
       </div>
 
@@ -42,8 +33,8 @@ const ContactsContent = () => {
           <div className='text-blue-300'>LinkedIn:</div>
         </div>
         <div className='flex-auto relative h-full ml-3'>
-          <div className='mb-3'> <a target="_blank" href='https://github.com/TalkingRaven0'>TalkingRaven0</a></div>
-          <div className='m-auto'> <a target="_blank" href='https://www.linkedin.com/in/den-salazar/'>Den Arwin Salazar</a> </div>
+          <div className='mb-3 underline'> <a target="_blank" href='https://github.com/TalkingRaven0'>TalkingRaven0</a></div>
+          <div className='m-auto underline'> <a target="_blank" href='https://www.linkedin.com/in/den-salazar/'>Den Arwin Salazar</a> </div>
         </div>
       </div>
     </div>
