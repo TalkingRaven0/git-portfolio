@@ -29,6 +29,8 @@ export default function RootLayout({
           <meta property="twitter:description" content="Who am I, What do I do, and What Can I do." />
           <meta property="twitter:image" content="/resources/thumbnail.png" />
 
+          <link rel="icon" href="/resources/favicon.ico" sizes="any" />
+
       </head>
       <body className={inter.className}>{children}</body>
     </html>
